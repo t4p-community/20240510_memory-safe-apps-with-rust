@@ -1,0 +1,17 @@
+[workspace]
+
+resolver = "2"
+
+members = [
+    "projects/01_mutable_variables",
+    "projects/02_mutable_structs",
+    "projects/03_mutable_boxes",
+    "projects/04_moving_or_borrowing",
+    "projects/05_iteration_borrowing",
+    "projects/06_iteration_moving",
+    "projects/07_references",
+    "projects/08_box_dyn_error",
+    "projects/09_closure",
+    "projects/10_lifetime",
+    "projects/11_concurrent",
+]
