@@ -6,6 +6,8 @@
 //     let v = vec![1, 2, 3];
 //     print_vec(v);
 
+//     // v is no longer available
+
 //     // This will not work because v has been moved into the function
 //     //print_vec(v);
 // }
@@ -23,26 +25,26 @@
 //     print_vec(&v);
 // }
 
-// fn mutable_borrow_example() {
-//     // the &mut symbol is used to create a mutable reference
-//     fn add_one(v: &mut Vec<i32>) {
-//         for i in v {
-//             *i += 1;
-//         }
-//     }
+fn mutable_borrow_example() {
+    // the &mut symbol is used to create a mutable reference
+    fn add_one(v: &mut Vec<i32>) {
+        for i in v {
+            *i += 1;
+        }
+    }
 
-//     fn print_vec(v: &Vec<i32>) {
-//         println!("{:?}", v);
-//     }
+    fn print_vec(v: &Vec<i32>) {
+        println!("{:?}", v);
+    }
 
-//     let mut v = vec![1, 2, 3];
-//     // v is borrowed mutably
-//     add_one(&mut v);
-//     print_vec(&v);
-// }
+    let mut v = vec![1, 2, 3];
+    // v is borrowed mutably
+    add_one(&mut v);
+    print_vec(&v);
+}
 
 fn main() {
     // move_example();
-    // borrow_example();
+    borrow_example();
     // mutable_borrow_example();
 }

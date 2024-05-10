@@ -2,7 +2,7 @@
 //     let num = 2;
 //     // cannot assign twice to immutable variable
 //     num = 4;
-//
+
 //     println!("num: {}", num);
 // }
 

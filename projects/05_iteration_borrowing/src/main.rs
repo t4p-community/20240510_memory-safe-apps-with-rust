@@ -28,24 +28,24 @@ use crate::cart_item::CartItem;
 //     }
 // }
 
-// fn iteration_mutable_value() {
-//     let mut nums = vec![1, 2, 3, 4, 5];
+fn iteration_mutable_value() {
+    let mut nums = vec![1, 2, 3, 4, 5];
 
-//     for num in nums.iter_mut() {
-//         // when you want to modify the value that the mutable
-//         // reference points to directly (not just a field of
-//         // that value), as is the case with your
-//         // `iteration_mutable` function, you need to use the
-//         // dereference operator `*` explicitly
-//         *num *= 2;
-//     }
+    for num in nums.iter_mut() {
+        // when you want to modify the value that the mutable
+        // reference points to directly (not just a field of
+        // that value), as is the case with your
+        // `iteration_mutable` function, you need to use the
+        // dereference operator `*` explicitly
+        *num *= 2;
+    }
 
-//     for num in nums.iter() {
-//         println!("{}", num);
-//     }
-// }
+    for num in nums.iter() {
+        println!("{}", num);
+    }
+}
 
 fn main() {
-    // iteration_mutable_struct();
+    iteration_mutable_struct();
     // iteration_mutable_value();
 }

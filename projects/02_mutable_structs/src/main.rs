@@ -27,14 +27,14 @@ use crate::counter::Counter;
 //     println!("Counter: {}", counter.get_count());
 // }
 
-// fn mutable_struct() {
-//     let mut counter = Counter::new();
-//     counter.increment();
-//     counter.increment();
-//     counter.increment();
-//     counter.decrement();
-//     println!("Counter: {}", counter.get_count());
-// }
+fn mutable_struct() {
+    let mut counter = Counter::new();
+    counter.increment();
+    counter.increment();
+    counter.increment();
+    counter.decrement();
+    println!("Counter: {}", counter.get_count());
+}
 
 fn main() {
     // immutable_vector();
